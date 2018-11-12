@@ -29,3 +29,13 @@ ul {
   justify-content: space-around;
   align-content: center;
 }
+
+img {
+  width: 1366px;
+  height: 607px;
+}
+
+.flourish-embed{
+  width: 1000px;
+}
+
