@@ -1,0 +1,168 @@
+* {
+  margin:0;
+  padding: 0;
+}
+
+.nav{
+  background: #0434b2;
+  overflow: hidden;
+}
+
+.nav .menu_main {
+  list-style: none;
+  background: grey;
+  text-align: center;
+}
+
+.nav .menu_main>li {
+  padding:1em;
+  width: 8%;
+  float: left;
+}
+
+.nav .menu_main>li>a{
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none
+}
+
+.nav .menu_main>li:hover, .nav .menu_main>li>.sub_menu>li:hover{
+  background: #5f7dd6;
+  cursor:pointer;
+}
+
+.nav .menu_main>li>.sub_menu>li:hover{
+  background:#5f7dd6;
+  cursor:pointer;
+}
+
+.nav .menu_main>li>.sub_menu{
+  position:absolute;
+  background: #0434b2;
+  width: 16%;
+  list-style: none;
+  margin-top:1em;
+  display:none;
+}
+
+
+
+
+.nav .menu_main>li:hover>.sub_menu{
+  display: block;
+}
+
+
+
+.nav .menu_main>li>.sub_menu>li{
+  padding:1em;
+}
+
+
+
+.nav .menu_main>li>.sub_menu>li>a{
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color:#fff;
+}
+
+
+h1{
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top:30px;
+}
+
+p{
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-bottom: 30px;
+ 
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.elements{
+  flex-direction: column;
+  margin-top: 30px;
+  margin-right: 80px;
+  margin-left: 85px;
+  text-align: left;
+ 
+}
+
+.flourish-embed{
+  margin-top:40px;
+}
+
+.hidden_button{
+  background-color: #0434b2;
+  padding: 10px 10px;
+  height: 20;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin: auto; 
+  display: block;
+  border: none;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+
+
+.hidden_button-i{
+  background-color: #0434b2;
+  padding: 10px 10px;
+  height: 20;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin: auto; 
+  border: none;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+
+
+
+.images{
+  flex-direction: row;
+  text-align: center;
+}
+
+#pegresados{
+  margin-top:30px;
+  font-size: 150px;
+  text-align: center;
+}
+
+#title{
+  text-align: center;
+}
+
+ #text{
+   text-align: center;
+   margin: 0;
+ }
+
+ #ptext{
+   margin-left: 200px;
+   margin-right: 200px;
+ }
+ 
+ .button{
+   text-align: center;
+   font-family: sans-serif;
+ }

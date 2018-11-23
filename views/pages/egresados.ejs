@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+<script type="text/javascript">
+    function mostrar_total(){
+        var element = document.getElementById("ver_total");
+        element.hidden = !element.hidden;
+    }
+    function mostrar_clasificacion(){
+        var element = document.getElementById("ver_clasificacion");
+        element.hidden = !element.hidden;
+    }
+    function mostrar_datos(){
+        var element = document.getElementById("ver_datos");
+        element.hidden = !element.hidden;
+    }
+</script>
+
+
+<body>
+    <nav class="nav">
+        <ul class="menu_main">
+            <li><a href="index">Inicio</a></li>
+            <li><a href="estadisticas">Encuestas +</a>
+                <ul class="sub_menu">
+                    <li><a href="egresados">Egresados</a>
+                    <li><a href="motivosAbandono">Motivos de abandono</a>
+                        <li><a href="motivosAbandonoTipo">Tipo de Universidad</a>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section class="section">
+        
+        <div class = "elements">
+            
+
+            <h1>Egresados</h1><br>
+            <p>A partir de la encuesta Encuesta Nacional de la Adolescencia y la Juventud se pudo
+                determinar que el 28% de jóvenes encuestados entre 25 y 29 años, finalizaron la Universidad. </p><br>
+            <p>Mientras que el 72% no finalizaron. Para realizar este cálculo, se sumó la cantidad que no terminaron con los que respondieron que asisten actualmente.</p>
+        <br>
+
+            <div class = "button">
+                <input class = "hidden_button" type="button" value="Mostrar gráfico" onclick="mostrar_total()">
+            </div>
+            <div id='ver_total' hidden="true" class="flourish-embed" data-src="visualisation/159836"></div><script src="https://public.flourish.studio/resources/embed.js"></script>                   
+
+
+            <h1>Clasificación</h1><br>
+            <p>De los jóvenes recibidos, 59,37% fueron mujeres y 40,62% mujeres.</p>            
+            
+            <div class = "button">
+                <input class = "hidden_button" type="button" value="Mostrar gráfico" onclick="mostrar_clasificacion()">
+            </div>
+            <div id='ver_clasificacion' hidden="true" class="flourish-embed" data-src="visualisation/159917"></div><script src="https://public.flourish.studio/resources/embed.js"></script>                  
+
+            <h1>Datos</h1><br>
+            <div class = "button">
+                <input class = "hidden_button" type="button" value="Mostrar gráfico" onclick="mostrar_datos()">
+            </div>
+            <div id='ver_datos' hidden="true" class="flourish-embed" data-src="visualisation/159913"></div><script src="https://public.flourish.studio/resources/embed.js"></script>                   
+
+        </div>
+        <p>Datos extraídos de INE, Encuesta Nacional de la Adolescencia y la Juventud. http://www.ine.gub.uy/encuesta-nacional-de-adolescencia-y-juventud.</p>            
+
+    </section> 
+
+</body>
+</html>
